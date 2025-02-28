@@ -1,0 +1,16 @@
+:root{
+    background-color: rgba(0, 0, 0, 0.76);
+
+}
+
+body{
+    position: relative;
+    background-color: rgb(196, 196, 196);
+    width: 400px;
+    display: block;
+    margin:  50px;
+    padding:  20px 0px 40px 0px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgb(27, 27, 27);
+}

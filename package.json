@@ -2,6 +2,7 @@
   "name": "platzi-intro-react-base",
   "version": "0.1.0",
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "react": "^18",
     "react-dom": "^18",
     "react-scripts": "5.0.1",
@@ -30,7 +31,7 @@
     ]
   },
   "emmet.includeLanguages": {
-  "javascript": "javascriptreact",
-  "typescript": "typescriptreact"
-  }  
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  }
 }

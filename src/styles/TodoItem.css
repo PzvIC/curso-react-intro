@@ -1,0 +1,44 @@
+ul{
+    padding: 0;
+}
+
+li{
+    height: 100px;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+    align-items: center;
+    margin: 50px 10px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    box-shadow: 0px 5px 10px gray;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    stroke-width: 6;
+    color: rgb(128, 126, 126);
+  }
+
+  .icon{
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    color:  rgb(88, 88, 88);
+    cursor: pointer;
+  }
+
+  .checkicon{
+    position: relative;
+    right: -20px;
+  }
+
+  .xmarkicon {
+    position: relative;
+    top: -48px;
+  }
+  
