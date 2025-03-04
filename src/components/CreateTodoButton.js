@@ -2,7 +2,11 @@ import "../styles/CreateTodoButton.css"
 
 function CreateTodoButton () {
     return (
-      <button>+</button>
+      <button
+        onClick={() => {
+          console.log("Click Todo Button")
+        }}
+      >+</button>
     )
 }
 

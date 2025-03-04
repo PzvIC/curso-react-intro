@@ -8,7 +8,7 @@ li{
     border: none;
     background-color: white;
     align-items: center;
-    margin: 50px 10px;
+    margin: 50px 30px;
     padding: 0px 20px;
     display: flex;
     justify-content: space-between;
@@ -28,17 +28,32 @@ li{
   }
   
   .icon:hover {
-    color:  rgb(88, 88, 88);
     cursor: pointer;
   }
 
-  .checkicon{
+  .icon-check{
     position: relative;
     right: -20px;
   }
 
-  .xmarkicon {
+  .task-complete{
+    text-decoration: line-through;
+  }
+
+  .task{
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .icon-check--completed{
+    color: green;
+  }
+
+  .icon-xmark {
     position: relative;
     top: -48px;
   }
   
+  .icon-xmark:hover{
+    color: rgb(184, 0, 0);  }

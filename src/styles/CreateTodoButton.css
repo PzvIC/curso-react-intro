@@ -11,10 +11,13 @@ button{
     position: absolute;
     right: 5px;
     bottom: 10px;
+
+    transform: rotate(0);
+    transition: .4s ease;
 }
 
 button:hover{
     background-color: rgb(12, 124, 175);
-    transition: background-color 0.3s ease-in-out;
+    transform: rotate(360deg);
     cursor: pointer;
 }
