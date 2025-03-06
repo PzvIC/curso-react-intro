@@ -1,0 +1,14 @@
+.msg{
+    padding-left: 48px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.loading{
+    color: green;
+}
+
+.error{
+    color: red;
+    text-transform: uppercase;
+}
