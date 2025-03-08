@@ -1,31 +1,35 @@
+import { useContext } from 'react';
 import { TodoCounter } from '../components/TodoCounter';
 import { CreateTodoButton } from '../components/CreateTodoButton';
 import { TodoItem } from '../components/TodoItem';
 import { TodoList } from '../components/TodoList';
 import { TodoSearch } from '../components/TodoSearch';
+import { TodosLoading } from './TodosLoading';
+import { TodosError } from './TodosError';
+import { TodoContext } from '../context/TodoContext';
+import { Modal } from './Modal';
+import { Form } from './Form';
+
 import "../styles/AppUI.css"
 
-function AppUI({
-    completedTodos,
-    totalTodos,
-    searchValue,
-    setSearchValue,
-    filterTodos,
-    todoCheck,
-    deleteTodo,
-    loading,
-    error
-}) {
+function AppUI() {
+
+    const {
+        filterTodos,
+        todoCheck,
+        deleteTodo,
+        loading,
+        error,
+        toogleModal,
+    } = useContext(TodoContext)
+
     return (
         <>
-            <TodoCounter completed={completedTodos} total={totalTodos} />
-            <TodoSearch
-                searchValue={searchValue}
-                setSearchValue={setSearchValue}
-            />
+            <TodoCounter />
+            <TodoSearch />
             <TodoList>
-                {loading && <p className='msg loading'>Loading TODOs...</p>}
-                {error && <p className='msg error'>There has been an error on loading the TODOs</p>}
+                {loading && <TodosLoading />}
+                {error && <TodosError />}
                 {filterTodos.map(todo => (
                     <TodoItem
                         key={todo.tarea}
@@ -37,6 +41,11 @@ function AppUI({
                 ))}
             </TodoList>
             <CreateTodoButton />
+            {toogleModal && (
+                <Modal>
+                    <Form/>
+                </Modal>
+            )}
         </>
     )
 

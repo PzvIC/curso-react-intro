@@ -1,0 +1,92 @@
+.form-todo {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    position: relative;
+    background-color: rgb(170, 170, 170);
+    width: 300px;
+    height: 220px;
+    display: block;
+    margin: 50px auto;
+    padding: 20px 0px 40px 0px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgb(27, 27, 27);
+
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeInMove 0.3s ease-out forwards;
+}
+
+@keyframes fadeInMove {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-label{
+    display: flex;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-text{
+    display: block;
+    margin: 0 auto 30px auto;
+    color: rgb(75, 75, 75);
+    font-size: 16px;
+    width: 240px;
+    height: 100px;
+    resize: none;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.form-text:focus{
+    outline-color: rgba(15, 153, 218, 0.829);
+}
+
+.form-button--box{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 40px 20px;
+}
+
+.form-button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-button--accept{
+    background-color: rgb(15, 154, 218);
+}
+
+.form-button--accept:hover{
+    background-color: rgb(12, 124, 175);
+    cursor: pointer;
+}
+
+.form-button--cancel{
+    background-color: rgb(255, 82, 82);
+}
+
+.form-button--cancel:hover{
+    background-color: rgb(255, 39, 39);
+    cursor: pointer;
+}

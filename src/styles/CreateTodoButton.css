@@ -1,4 +1,4 @@
-button{
+.todo-button{
     height: 100px;
     width: 100px;
     font-size: 90px;
@@ -11,12 +11,13 @@ button{
     position: absolute;
     right: 5px;
     bottom: 10px;
+    z-index: 1;
 
     transform: rotate(0);
     transition: .4s ease;
 }
 
-button:hover{
+.todo-button:hover{
     background-color: rgb(12, 124, 175);
     transform: rotate(360deg);
     cursor: pointer;

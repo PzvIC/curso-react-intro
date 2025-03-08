@@ -1,14 +1,16 @@
-.msg{
-    padding-left: 48px;
-    font-size: 24px;
-    font-weight: bold;
+:root{
+    background-color: rgba(0, 0, 0, 0.76);
 }
 
-.loading{
-    color: green;
-}
-
-.error{
-    color: red;
-    text-transform: uppercase;
+body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    position: relative;
+    background-color: rgb(196, 196, 196);
+    width: 600px;
+    display: block;
+    margin:  50px auto 0 auto;
+    padding:  20px 0px 40px 0px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgb(27, 27, 27);
 }

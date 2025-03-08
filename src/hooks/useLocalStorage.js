@@ -9,20 +9,19 @@ function useLocalStorage(itemName, initialValue) {
     setTimeout(() => {
       try {
         const storedItem = localStorage.getItem(itemName);
-
         if (storedItem) {
           setItem(JSON.parse(storedItem));
         } else {
           localStorage.setItem(itemName, JSON.stringify(initialValue));
         }
-
       } catch (err) {
+        console.error("Error en localStorage:", err);
         setError(true);
       } finally {
         setLoading(false);
       }
     }, 1000)
-  });
+  }, [itemName]);
 
   const updateItem = (newItem) => {
     try {
@@ -37,3 +36,4 @@ function useLocalStorage(itemName, initialValue) {
 }
 
 export { useLocalStorage };
+

@@ -1,0 +1,14 @@
+.spawn-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(32,35,41,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgb(27, 27, 27);
+}

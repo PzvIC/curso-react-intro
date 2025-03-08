@@ -1,10 +1,13 @@
+import { useContext } from "react"
 import "../styles/CreateTodoButton.css"
+import { TodoContext } from "../context/TodoContext"
 
 function CreateTodoButton () {
+  const { toogleModal, setToogleModal } = useContext(TodoContext)
     return (
-      <button
+      <button className="todo-button"
         onClick={() => {
-          console.log("Click Todo Button")
+          setToogleModal(!toogleModal)
         }}
       >+</button>
     )
